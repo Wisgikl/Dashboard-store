@@ -8,6 +8,7 @@ import {
 } from "react-icons/ri";
 import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
+import { Content } from "./components/Content";
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
@@ -41,7 +42,9 @@ function App() {
       <main className=" lg:pl-28 grid grid-cols-1 lg:grid-cols-8">
         <div className=" lg:col-span-6">
           <Header />
+          <Content/>
         </div>
+
         <div className=" lg:col-span-2 fixed lg:static right-0">Carrito</div>
       </main>
     </div>
