@@ -14,7 +14,7 @@ export const Sidebar = (props) => {
       transition-all
       ${showMenu ? " left-0" : "-left-full"}`}
     >
-      <div className=" justify-between">
+      <div className=" justify-between ">
         <ul className=" pl-4 ">
           <li>
             <h1 className="text-2xl text-gray-300 uppercase font-bold text-center my-5 ">

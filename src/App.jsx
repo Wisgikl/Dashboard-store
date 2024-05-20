@@ -39,7 +39,7 @@ function App() {
           {showMenu ? <RiCloseLargeFill /> : <RiMenuFill />}
         </button>
       </nav>
-      <main className=" lg:pl-28 grid grid-cols-1 lg:grid-cols-8">
+      <main className=" lg:pl-28 grid grid-cols-1 lg:grid-cols-8 pb-20 ">
         <div className=" lg:col-span-6">
           <Header />
           <Content/>
