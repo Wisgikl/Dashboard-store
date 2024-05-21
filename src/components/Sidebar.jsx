@@ -6,6 +6,10 @@ import { SlSettings } from "react-icons/sl";
 import { IoLogOutOutline } from "react-icons/io5";
 export const Sidebar = (props) => {
   const { showMenu } = props;
+  const classLi =
+    "hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors";
+  const classA =
+    "group-hover:bg-[#ec7c6a] p-4  rounded-xl text-[#ec7c6a] flex justify-center group-hover:text-white transition-colors";
   return (
     <div
       className={`bg-[#1F1D2B] fixed lg:left-0 top-0 w-28 h-full
@@ -29,43 +33,28 @@ export const Sidebar = (props) => {
               <TbHome className="text-2xl " />
             </a>
           </li>
-          <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
-            <a
-              href="#"
-              className="group-hover:bg-[#ec7c6a] p-4  rounded-xl text-[#ec7c6a] flex justify-center group-hover:text-white transition-colors"
-            >
+          <li className={classLi}>
+            <a href="#" className={classA}>
               <RiDiscountPercentLine className="text-2xl " />
             </a>
           </li>
-          <li className="hover:bg-[#262837] p-5 rounded-tl-xl rounded-bl-xl group transition-colors">
-            <a
-              href="#"
-              className="group-hover:bg-[#ec7c6a] p-4  rounded-xl text-[#ec7c6a] flex justify-center group-hover:text-white transition-colors"
-            >
+          <li className={classLi}>
+            <a href="#" className={classA}>
               <RiShoppingBasket2Line className="text-2xl " />
             </a>
           </li>
-          <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
-            <a
-              href="#"
-              className="group-hover:bg-[#ec7c6a] p-4  rounded-xl text-[#ec7c6a] flex justify-center group-hover:text-white transition-colors"
-            >
+          <li className={classLi}>
+            <a href="#" className={classA}>
               <LuMail className="text-2xl " />
             </a>
           </li>
-          <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
-            <a
-              href="#"
-              className="group-hover:bg-[#ec7c6a] p-4  rounded-xl text-[#ec7c6a] flex justify-center group-hover:text-white transition-colors"
-            >
+          <li className={classLi}>
+            <a href="#" className={classA}>
               <HiOutlineBellAlert className="text-2xl " />
             </a>
           </li>
-          <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
-            <a
-              href="#"
-              className="group-hover:bg-[#ec7c6a] p-4  rounded-xl text-[#ec7c6a] flex justify-center group-hover:text-white transition-colors"
-            >
+          <li className={classLi}>
+            <a href="#" className={classA}>
               <SlSettings className="text-2xl " />
             </a>
           </li>

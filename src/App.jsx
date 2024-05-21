@@ -9,6 +9,7 @@ import {
 import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
 import { Content } from "./components/Content";
+import { Cart } from "./components/Cart";
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
@@ -42,10 +43,12 @@ function App() {
       <main className=" lg:pl-28 grid grid-cols-1 lg:grid-cols-8 pb-20 ">
         <div className=" lg:col-span-6">
           <Header />
-          <Content/>
+          <Content />
         </div>
 
-        <div className=" lg:col-span-2 fixed lg:static right-0">Carrito</div>
+        <div className=" lg:col-span-2 fixed lg:static right-0 top-0 bg-[#1F1D2B] w-full h-full">
+          <Cart />
+        </div>
       </main>
     </div>
   );

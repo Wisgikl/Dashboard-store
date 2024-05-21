@@ -1,4 +1,4 @@
-import { RiSearchLine,RiArrowDownWideLine  } from "react-icons/ri";
+import { RiSearchLine } from "react-icons/ri";
 import { useState } from "react";
 export const Header = () => {
   const [fecha, setFecha] = useState(new Date());
@@ -51,7 +51,6 @@ export const Header = () => {
           Grill
         </a>
       </nav>
-      
     </header>
   );
 };
