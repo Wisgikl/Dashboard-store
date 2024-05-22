@@ -13,7 +13,9 @@ import { Cart } from "./components/Cart";
 function App() {
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
-
+  const toggleOrders = () => {
+    setShowOrder(!showOrder);
+  };
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -33,7 +35,7 @@ function App() {
         <button className="p-2">
           <RiAddLargeFill />
         </button>
-        <button className="p-2">
+        <button onClick={toggleOrders} className="p-2">
           <RiShoppingBasket2Line />
         </button>
         <button onClick={toggleMenu} className=" text-white p-2 ">
@@ -46,8 +48,12 @@ function App() {
           <Content />
         </div>
 
-        <div className=" lg:col-span-2 fixed lg:static right-0 top-0 bg-[#1F1D2B] w-full h-full">
-          <Cart />
+        <div
+          className={` lg:col-span-2 fixed lg:static  top-0 bg-[#1F1D2B] w-full h-full transition-all ${
+            showOrder ? "right-0" : "-right-full"
+          }`}
+        >
+          <Cart toggleOrders={toggleOrders} />
         </div>
       </main>
     </div>
