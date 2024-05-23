@@ -1,5 +1,10 @@
 import { TbHome } from "react-icons/tb";
-import { RiDiscountPercentLine, RiShoppingBasket2Line } from "react-icons/ri";
+import {
+  RiDiscountPercentLine,
+  RiShoppingBasket2Line,
+  RiStore2Line,
+} from "react-icons/ri";
+import { CiShop } from "react-icons/ci";
 import { LuMail } from "react-icons/lu";
 import { HiOutlineBellAlert } from "react-icons/hi2";
 import { SlSettings } from "react-icons/sl";
@@ -20,10 +25,13 @@ export const Sidebar = (props) => {
     >
       <div className=" justify-between ">
         <ul className=" pl-4 ">
-          <li>
-            <h1 className="text-2xl text-gray-300 uppercase font-bold text-center my-5 ">
-              Logo
-            </h1>
+          <li className="bg-[#1F1D2B] p-4 rounded-tl-xl rounded-bl-xl">
+            <a
+              href="#"
+              className="  py-1 rounded-xl text-white flex justify-center w-5/6 "
+            >
+              <CiShop className="text-4xl text-[#ed5c46]  bg-gradient-to-t" />
+            </a>
           </li>
           <li className="bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl ">
             <a

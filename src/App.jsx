@@ -15,9 +15,11 @@ function App() {
   const [showOrder, setShowOrder] = useState(false);
   const toggleOrders = () => {
     setShowOrder(!showOrder);
+    setShowMenu(false);
   };
   const toggleMenu = () => {
     setShowMenu(!showMenu);
+    setShowOrder(false);
   };
   return (
     <div className="bg-[#262837] w-full min-h-screen">
@@ -43,13 +45,13 @@ function App() {
         </button>
       </nav>
       <main className=" lg:pl-28 grid grid-cols-1 lg:grid-cols-8 pb-20 ">
-        <div className=" lg:col-span-6">
+        <div className=" lg:col-span-6 md:p-8">
           <Header />
           <Content />
         </div>
 
         <div
-          className={` lg:col-span-2 fixed lg:static  top-0 bg-[#1F1D2B] w-full h-full transition-all ${
+          className={` lg:col-span-2 fixed  top-0 bg-[#1F1D2B] lg:right-0 lg:w-96 w-full h-full transition-all rounded-tl-xl  ${
             showOrder ? "right-0" : "-right-full"
           }`}
         >

@@ -22,32 +22,32 @@ export const Card = () => {
         <div className={classDivImage}>
           <img src={plato3} className=" w-40 h-40 object-cover -mt-24  " />
           <p className=" text-xl">Foie Gras a la Poêle</p>
-          <span className=" text-gray-400">$2.29</span>
-          <p className=" text-gray-500">20 plates available</p>
+          <span className=" text-gray-400">$4.40</span>
+          <p className=" text-gray-500">10 plates available</p>
         </div>
         <div className={classDivImage}>
           <img src={plato4} className=" w-40 h-40 object-cover -mt-24  " />
           <p className=" text-xl">Coq au Vin</p>
-          <span className=" text-gray-400">$2.29</span>
-          <p className=" text-gray-500">20 plates available</p>
+          <span className=" text-gray-400">$2.50</span>
+          <p className=" text-gray-500">50 plates available</p>
         </div>
         <div className={classDivImage}>
           <img src={plato5} className=" w-40 h-40 object-cover -mt-24  " />
           <p className=" text-xl">Crème Brûlée de Vainilla de Tahití</p>
-          <span className=" text-gray-400">$2.29</span>
-          <p className=" text-gray-500">20 plates available</p>
+          <span className=" text-gray-400">$1.20</span>
+          <p className=" text-gray-500">25 plates available</p>
         </div>
         <div className={classDivImage}>
           <img src={plato6} className=" w-30 h-30 object-cover -mt-24  " />
           <p className=" text-xl">Black Truffle Risotto</p>
-          <span className=" text-gray-400">$2.29</span>
-          <p className=" text-gray-500">20 plates available</p>
+          <span className=" text-gray-400">$7.00</span>
+          <p className=" text-gray-500">12 plates available</p>
         </div>
         <div className={classDivImage}>
           <img src={plato7} className=" w-50 h-44 object-cover -mt-24  " />
           <p className=" text-xl">Wagyu Beef Tenderloin</p>
-          <span className=" text-gray-400">$2.29</span>
-          <p className=" text-gray-500">20 plates available</p>
+          <span className=" text-gray-400">$10.30</span>
+          <p className=" text-gray-500">5 plates available</p>
         </div>
       </div>
     </>
